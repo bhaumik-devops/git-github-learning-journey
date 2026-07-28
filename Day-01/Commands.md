@@ -11,7 +11,7 @@ git --version
 ## Configure Username
 
 ```bash
-git config --global user.name "Bhaumik Dhebar"
+git config --global user.name "Your username"
 ```
 
 ---
@@ -19,7 +19,7 @@ git config --global user.name "Bhaumik Dhebar"
 ## Configure Email
 
 ```bash
-git config --global user.email "dhebarbhaumik17dev@gmail.com"
+git config --global user.email "your email address with the same account of github"
 ```
 
 ---
