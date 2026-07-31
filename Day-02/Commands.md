@@ -83,3 +83,14 @@ git log
 
 Displays the complete commit history. The latest commit is pointed to by HEAD.
 ```
+
+
+# Git Commands - Day 02
+
+| Command                           | Description |
+|-----------------------------------|--------------------------------------------|
+| git status                        | Check the current status of the repository.|
+| git add .                         | Add all changes to the staging area. |
+| git commit -m "message"           | Create a new commit with a message. |
+| git log --oneline                 | Display commit history in one line. |
+| git init                          | Initialize a new Git repository. |
