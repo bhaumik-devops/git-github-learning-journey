@@ -338,3 +338,72 @@ Similarly, when you create a new commit, HEAD moves to the latest commit.
 - It points to the latest commit.
 - Moves automatically after every new commit.
 - Represents your current working version.
+
+
+# 10. git init
+
+git init initializes a new Git repository by creating a hidden .git directory.
+
+---
+
+## Real World Example
+
+Normal Folder
+
+↓
+
+git init
+
+↓
+
+Git Repository
+
+---
+
+## Important Points
+
+- Used only once.
+- Creates hidden .git folder.
+- Starts Version Control.
+- Used for new projects.
+
+---
+
+## Practical Completed
+
+Repository successfully initialized using git init.
+
+
+# 11. Practical Summary
+
+## Practical Completed
+
+Today I successfully created a new Git repository from scratch using the `git init` command.
+
+### Steps Performed
+
+1. Created a new folder (`git-init-demo`)
+2. Initialized a Git repository using `git init`
+3. Checked the repository status using `git status`
+4. Created a `README.md` file
+5. Added the file to the Staging Area using `git add .`
+6. Created the first commit using `git commit -m "Initial commit"`
+7. Verified the commit history using `git log --oneline`
+
+### Commands Used
+
+```bash
+git init
+git status
+git add .
+git commit -m "Initial commit"
+git log --oneline
+```
+
+### What I Learned
+
+- How to initialize a new Git repository.
+- How Git starts tracking a project.
+- Difference between an untracked file and a staged file.
+- How to create the first commit.
+- How to verify commit history.
