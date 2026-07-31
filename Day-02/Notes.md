@@ -338,3 +338,37 @@ Similarly, when you create a new commit, HEAD moves to the latest commit.
 - It points to the latest commit.
 - Moves automatically after every new commit.
 - Represents your current working version.
+
+
+# 10. git init
+
+git init initializes a new Git repository by creating a hidden .git directory.
+
+---
+
+## Real World Example
+
+Normal Folder
+
+↓
+
+git init
+
+↓
+
+Git Repository
+
+---
+
+## Important Points
+
+- Used only once.
+- Creates hidden .git folder.
+- Starts Version Control.
+- Used for new projects.
+
+---
+
+## Practical Completed
+
+Repository successfully initialized using git init.
