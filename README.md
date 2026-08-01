@@ -33,8 +33,8 @@ git-github-learning-journey
 
 ## 📅 Progress Tracker
 
-- [ ] Day 01 - Git Fundamentals
-- [ ] Day 02 - Git Basics
+- [X] Day 01 - Git Fundamentals
+- [X] Day 02 - Git Basics
 - [ ] Day 03 - Git Branching
 - [ ] Day 04 - Git Merge
 - [ ] Day 05 - GitHub Workflow
