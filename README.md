@@ -35,7 +35,7 @@ git-github-learning-journey
 
 - [X] Day 01 - Git Fundamentals
 - [X] Day 02 - Git Basics
-- [ ] Day 03 - Git Branching
+- [X] Day 03 - Git Branching
 - [ ] Day 04 - Git Merge
 - [ ] Day 05 - GitHub Workflow
 
