@@ -282,3 +282,14 @@ Q. Explain the Git Branch Workflow.
 Answer:
 
 The Git Branch Workflow starts by creating a new branch from the Main branch. Developers work on the feature, commit their changes, test the code, and finally merge the branch back into the Main branch after successful testing.
+
+
+## Practical Observation
+
+During the practical, I created a file named `login-feature.txt` inside the `feature-login` branch.
+
+When I switched to the `main` branch, the file disappeared because it was not part of the `main` branch.
+
+When I switched back to the `feature-login` branch, the file appeared again.
+
+This practical proved that every Git branch has its own independent snapshot of the project.
