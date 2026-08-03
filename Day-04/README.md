@@ -55,3 +55,8 @@ After completing Day-04, I can:
 - Resolve Merge Conflicts manually.
 - Complete a merge after resolving conflicts.
 - Follow a professional Git merge workflow.
+
+
+## Note
+
+The practical was completed successfully. Some screenshots were not captured during the session because the focus was on understanding and completing the merge conflict resolution.
