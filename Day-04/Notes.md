@@ -177,3 +177,37 @@ The most common Merge Conflicts are:
 - Modify/Delete Conflict
 - Rename Conflict
 - Add/Add Conflict
+
+
+## Practical Observation
+
+During this practical, I intentionally created a merge conflict between two branches.
+
+Git displayed conflict markers because both branches contained different versions of the same file.
+
+I manually resolved the conflict by choosing the required content, removed the conflict markers, staged the file using `git add`, and completed the merge with a new commit.
+
+This practical helped me understand how Git handles merge conflicts in real-world software development.
+
+
+# Interview Questions
+
+### Q1. What is a Merge Conflict?
+
+### Q2. Why do Merge Conflicts occur?
+
+### Q3. How do you resolve a Merge Conflict?
+
+### Q4. What are conflict markers in Git?
+
+### Q5. What is the difference between Fast-forward Merge and a Merge Conflict?
+
+### Q6. What is an Add/Add Conflict?
+
+### Q7. Can Git resolve every Merge Conflict automatically?
+
+### Q8. What should you do after resolving a Merge Conflict?
+
+### Q9. Which command stages a resolved conflict?
+
+### Q10. Which command completes the merge after resolving the conflict?
