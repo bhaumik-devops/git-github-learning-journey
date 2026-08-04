@@ -1,0 +1,187 @@
+# Git & GitHub Command Mastery Checklist
+
+> **Legend**
+>
+> - [ ] Not Started
+> - [x] Completed
+
+---
+
+# Module 1 - Git Configuration
+
+- [ ] git --version
+- [ ] git config --global user.name
+- [ ] git config --global user.email
+- [ ] git config --list
+- [ ] git help
+- [ ] git help <command>
+
+---
+
+# Module 2 - Repository Basics
+
+- [ ] git init
+- [ ] git clone
+- [ ] git status
+
+---
+
+# Module 3 - Staging Area
+
+- [ ] git add
+- [ ] git add .
+- [ ] git add -A
+- [ ] git add -u
+- [ ] git restore
+- [ ] git restore --staged
+- [ ] git rm
+- [ ] git mv
+
+---
+
+# Module 4 - Commit Management
+
+- [ ] git commit
+- [ ] git commit -m
+- [ ] git commit --amend
+
+---
+
+# Module 5 - History & Logs
+
+- [ ] git log
+- [ ] git log --oneline
+- [ ] git log --graph
+- [ ] git log --oneline --graph --all
+- [ ] git show
+- [ ] git shortlog
+
+---
+
+# Module 6 - Difference & Inspection
+
+- [ ] git diff
+- [ ] git diff --staged
+- [ ] git diff HEAD
+
+---
+
+# Module 7 - Branching
+
+- [ ] git branch
+- [ ] git branch <branch-name>
+- [ ] git branch -a
+- [ ] git branch -r
+- [ ] git branch -d
+- [ ] git branch -D
+- [ ] git switch
+- [ ] git switch -c
+- [ ] git checkout
+- [ ] git checkout -b
+
+---
+
+# Module 8 - Merging
+
+- [ ] git merge
+- [ ] git merge --abort
+- [ ] git merge --no-ff
+
+---
+
+# Module 9 - Remote Repository
+
+- [ ] git remote
+- [ ] git remote -v
+- [ ] git remote add origin
+- [ ] git remote remove
+- [ ] git remote rename
+- [ ] git remote show origin
+
+---
+
+# Module 10 - Push & Pull
+
+- [ ] git push
+- [ ] git push -u origin
+- [ ] git push --force
+- [ ] git pull
+- [ ] git pull --rebase
+- [ ] git fetch
+- [ ] git fetch --all
+
+---
+
+# Module 11 - Undo & Recovery
+
+- [ ] git reset
+- [ ] git reset --soft
+- [ ] git reset --mixed
+- [ ] git reset --hard
+- [ ] git revert
+- [ ] git reflog
+- [ ] git clean
+- [ ] git clean -fd
+
+---
+
+# Module 12 - Stash
+
+- [ ] git stash
+- [ ] git stash list
+- [ ] git stash show
+- [ ] git stash apply
+- [ ] git stash pop
+- [ ] git stash drop
+- [ ] git stash clear
+
+---
+
+# Module 13 - Tags
+
+- [ ] git tag
+- [ ] git tag -a
+- [ ] git tag -d
+- [ ] git show <tag>
+- [ ] git push origin --tags
+
+---
+
+# Module 14 - Advanced Git
+
+- [ ] git rebase
+- [ ] git rebase -i
+- [ ] git cherry-pick
+- [ ] git bisect
+- [ ] git blame
+- [ ] git archive
+
+---
+
+# Module 15 - GitHub Workflow
+
+- [ ] Create Repository
+- [ ] Fork Repository
+- [ ] Clone Repository
+- [ ] Create Feature Branch
+- [ ] Push Feature Branch
+- [ ] Pull Request (PR)
+- [ ] Review Pull Request
+- [ ] Merge Pull Request
+- [ ] Delete Branch after Merge
+- [ ] Resolve Merge Conflict
+- [ ] GitHub Issues
+- [ ] GitHub Projects
+- [ ] GitHub Releases
+- [ ] Branch Protection Rules
+- [ ] GitHub Actions (Basics)
+
+---
+
+# Progress
+
+Git Commands Completed: ____ / 82
+
+GitHub Workflows Completed: ____ / 15
+
+Overall Progress: ____ %
