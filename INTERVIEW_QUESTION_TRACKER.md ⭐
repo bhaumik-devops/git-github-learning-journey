@@ -1,0 +1,33 @@
+# DevOps Interview Question Tracker
+
+## Git & GitHub
+
+### Day-01
+- [x] Git Introduction
+- [x] Repository
+- [x] Git vs GitHub
+
+### Day-02
+- [x] git init
+- [x] git status
+- [x] git add
+- [x] git commit
+- [x] git push
+- [x] git pull
+
+### Day-03
+- [x] Git Branch
+- [x] Git Switch
+- [x] Feature Branch
+- [x] Git Merge
+
+### Day-04
+- [x] Merge Conflict
+- [x] Conflict Resolution
+- [x] Conflict Markers
+
+### Day-05
+- [ ] Branch Management
+- [ ] Local vs Remote Branch
+- [ ] git fetch
+- [ ] git remote
