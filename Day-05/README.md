@@ -5,14 +5,27 @@
 - Branch Management
 - Local Branch
 - Remote Branch
-- Viewing Local & Remote Branches
-- Git Remote Information
+- Viewing Local and Remote Branches
+- Remote Repository Information
 - Fetching Remote Changes
-- Deleting Branches Safely
+- Deleting Branches
 
 ---
 
-## 💻 Commands to Practice
+## 🎯 Learning Objectives
+
+After completing Day-05, I will be able to:
+
+- Understand Branch Management.
+- Explain the difference between Local and Remote branches.
+- View all local and remote branches.
+- View remote repository details.
+- Fetch the latest changes from GitHub.
+- Delete merged and unmerged branches safely.
+
+---
+
+## 💻 Commands Covered
 
 - git branch -a
 - git branch -r
@@ -22,19 +35,6 @@
 - git fetch --all
 - git branch -d
 - git branch -D
-
----
-
-## 🎯 Learning Objectives
-
-After completing Day-05, I will be able to:
-
-- Understand the difference between Local and Remote branches.
-- View all local and remote branches.
-- View remote repository information.
-- Fetch the latest changes without merging.
-- Delete merged and unmerged branches safely.
-- Explain Branch Management in Git.
 
 ---
 
