@@ -108,31 +108,91 @@ Answer:
 
 ---
 
-### 3. git remote -v
+## 3. git remote -v
 
-Purpose:
+### Purpose
 
-Syntax:
+The `git remote -v` command displays the remote repositories connected to the local Git repository, along with their fetch and push URLs.
 
-Example:
+### Syntax
 
-Output:
+git remote -v
 
-Real World Use:
+### Example
 
+git remote -v
+
+### Example Output
+
+origin  https://github.com/bhaumik-devops/git-github-learning-journey.git (fetch)
+origin  https://github.com/bhaumik-devops/git-github-learning-journey.git (push)
+
+### How to Understand the Output
+
+- `origin` → Name of the remote repository.
+- `(fetch)` → URL used to download changes from the remote repository.
+- `(push)` → URL used to upload local changes to the remote repository.
+
+### Real-World Use
+
+A developer can use `git remote -v` to verify which GitHub repository is connected to the local project and which URLs are being used for fetching and pushing.
+
+### Interview Question
+
+Q. What does `git remote -v` do?
+
+Answer:
+
+`git remote -v` displays the names and URLs of the remote repositories configured for a local Git repository, including fetch and push URLs.
+
+### Practical Status
+
+- [x] Command executed
+- [x] Output checked
+- [x] Concept understood
 ---
 
-### 4. git remote show origin
+## 4. git remote show origin
 
-Purpose:
+### Purpose
 
-Syntax:
+The `git remote show origin` command displays detailed information about the remote repository named `origin`, including its fetch URL, push URL, default branch, tracked branches, pull configuration, and push configuration.
 
-Example:
+### Syntax
 
-Output:
+git remote show origin
 
-Real World Use:
+### Example
+
+git remote show origin
+
+### Important Output
+
+- Fetch URL → URL used to fetch changes from GitHub.
+- Push URL → URL used to push changes to GitHub.
+- HEAD branch → Default branch of the remote repository.
+- Remote branch tracked → Remote branch tracked by the local repository.
+- Local branch configured for git pull → Shows which remote branch the local branch pulls from.
+- Local ref configured for git push → Shows which remote branch the local branch pushes to.
+- Up to date → Local and remote branches are synchronized.
+
+### Real-World Use
+
+A developer can use this command to troubleshoot remote repository configuration and verify which remote branches are tracked by local branches.
+
+### Interview Question
+
+Q. What is the difference between `git remote -v` and `git remote show origin`?
+
+Answer:
+
+`git remote -v` displays the remote repository URLs for fetching and pushing, while `git remote show origin` provides detailed information about the remote repository, including branch tracking, default branch, pull configuration, and push configuration.
+
+### Practical Status
+
+- [x] Command executed
+- [x] Output checked
+- [x] Concept understood
 
 ---
 
