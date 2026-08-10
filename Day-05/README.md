@@ -49,3 +49,25 @@ After completing Day-05, I will be able to:
 ## 📌 Status
 
 🟡 In Progress
+
+## ✅ Completed
+
+### Commands Practiced
+
+- [x] git branch -a
+- [x] git branch -r
+- [x] git remote -v
+- [x] git remote show origin
+
+### Documentation
+
+- [x] Commands documented
+- [x] Screenshots captured
+- [x] Local vs Remote Branch concept understood
+
+### Remaining
+
+- [ ] git fetch
+- [ ] git fetch --all
+- [ ] git branch -d
+- [ ] git branch -D
