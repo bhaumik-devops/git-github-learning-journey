@@ -9,10 +9,10 @@
 
 # Module 1 - Git Configuration
 
-- [ ] git --version
-- [ ] git config --global user.name
-- [ ] git config --global user.email
-- [ ] git config --list
+- [X] git --version
+- [X] git config --global user.name
+- [X] git config --global user.email
+- [X] git config --list
 - [ ] git help
 - [ ] git help <command>
 
@@ -20,16 +20,16 @@
 
 # Module 2 - Repository Basics
 
-- [ ] git init
+- [X] git init
 - [ ] git clone
-- [ ] git status
+- [X] git status
 
 ---
 
 # Module 3 - Staging Area
 
-- [ ] git add
-- [ ] git add .
+- [X] git add
+- [X] git add .
 - [ ] git add -A
 - [ ] git add -u
 - [ ] git restore
@@ -41,16 +41,16 @@
 
 # Module 4 - Commit Management
 
-- [ ] git commit
-- [ ] git commit -m
+- [X] git commit
+- [X] git commit -m
 - [ ] git commit --amend
 
 ---
 
 # Module 5 - History & Logs
 
-- [ ] git log
-- [ ] git log --oneline
+- [X] git log
+- [X] git log --oneline
 - [ ] git log --graph
 - [ ] git log --oneline --graph --all
 - [ ] git show
@@ -68,13 +68,13 @@
 
 # Module 7 - Branching
 
-- [ ] git branch
-- [ ] git branch <branch-name>
-- [ ] git branch -a
-- [ ] git branch -r
-- [ ] git branch -d
-- [ ] git branch -D
-- [ ] git switch
+- [X] git branch
+- [X] git branch <branch-name>
+- [X] git branch -a
+- [X] git branch -r
+- [X] git branch -d
+- [X] git branch -D
+- [X] git switch
 - [ ] git switch -c
 - [ ] git checkout
 - [ ] git checkout -b
@@ -92,23 +92,23 @@
 # Module 9 - Remote Repository
 
 - [ ] git remote
-- [ ] git remote -v
+- [X] git remote -v
 - [ ] git remote add origin
 - [ ] git remote remove
 - [ ] git remote rename
-- [ ] git remote show origin
+- [X] git remote show origin
 
 ---
 
 # Module 10 - Push & Pull
 
-- [ ] git push
+- [X] git push
 - [ ] git push -u origin
 - [ ] git push --force
-- [ ] git pull
+- [X] git pull
 - [ ] git pull --rebase
-- [ ] git fetch
-- [ ] git fetch --all
+- [X] git fetch
+- [X] git fetch --all
 
 ---
 
