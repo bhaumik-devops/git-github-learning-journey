@@ -157,3 +157,343 @@ feature-login
 feature-a
 origin/main
 origin/feature-login
+
+Real-World Use:
+
+A developer can use this command to see all local branches and remote-tracking branches before switching branches or working with a remote branch.
+
+---
+
+# 3. `git branch -r`
+
+The `git branch -r` command displays only remote-tracking branches.
+
+### Syntax
+
+`git branch -r`
+
+### Example
+
+`git branch -r`
+
+### Example Output
+
+```text
+origin/HEAD -> origin/main
+origin/main
+
+Real-World Use:
+
+A developer can use this command to check which remote branches are currently known to the local Git repository.
+
+---
+
+# 4. Remote Repository
+
+A remote repository is a Git repository hosted on a remote platform such as GitHub.
+
+In our project:
+
+```text
+Local Repository
+       |
+       | origin
+       ↓
+GitHub Repository
+
+The remote repository for this project is named:
+
+"origin"
+
+The remote repository contains the shared version of the project.
+
+---
+
+# 5. `git remote -v`
+
+The `git remote -v` command displays the remote repository URLs configured for the local Git repository.
+
+### Syntax
+
+`git remote -v`
+
+### Example
+
+`git remote -v`
+
+### Example Output
+
+```text
+origin  https://github.com/example/repository.git (fetch)
+origin  https://github.com/example/repository.git (push)
+
+Real-World Use:
+
+A developer can use git remote -v to verify which GitHub repository is connected to the local project.
+
+---
+
+# 6. `git remote show origin`
+
+The `git remote show origin` command displays detailed information about the remote repository named `origin`.
+
+### Syntax
+
+`git remote show origin`
+
+### Information Displayed
+
+It can show:
+
+- Fetch URL
+- Push URL
+- HEAD branch
+- Remote branches
+- Tracked branches
+- Pull configuration
+- Push configuration
+
+### Example Output
+
+```text
+* remote origin
+  Fetch URL: https://github.com/example/repository.git
+  Push  URL: https://github.com/example/repository.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main
+
+Real-World Use:
+
+A developer can use this command to troubleshoot remote configuration and understand how local branches are connected to remote branches.
+
+---
+
+# 7. Branch Tracking
+
+A local branch can track a remote-tracking branch.
+
+For example:
+
+```text
+Local main
+     |
+     | tracks
+     ↓
+origin/main
+
+For example:
+
+git pull
+
+can use the configured remote-tracking branch automatically.
+
+Similarly:
+
+git push
+
+can push the local branch to its configured remote branch.
+
+---
+
+# 8. `git fetch`
+
+The `git fetch` command downloads the latest changes and branch information from the remote repository.
+
+### Syntax
+
+`git fetch`
+
+### Example
+
+`git fetch`
+
+### Example Output
+
+If the repository is already up to date, the command may produce no output.
+
+```text
+PS C:\...\git-github-learning-journey> git fetch
+PS C:\...\git-github-learning-journey>
+
+Real-World Use:
+
+Developers can use git fetch to check for remote updates before deciding whether those changes should be integrated into the current branch.
+
+---
+
+# 9. `git fetch` vs `git pull`
+
+These two commands are closely related but behave differently.
+
+### git fetch
+
+- Downloads remote changes.
+- Updates remote-tracking references.
+- Does not automatically merge changes.
+- Does not automatically modify the current working files.
+
+### git pull
+
+- Fetches remote changes.
+- Then integrates those changes into the current branch.
+
+### Simple Comparison
+
+```text
+git fetch
+    ↓
+Download changes
+    ↓
+Review changes
+    ↓
+Decide when to integrate
+
+
+Whereas:
+
+git pull
+    ↓
+Fetch changes
+    ↓
+Integrate changes
+
+
+Key Point:
+
+git fetch gives the developer more control because the downloaded changes can be reviewed before integration.
+
+---
+
+# 10. `git fetch --all`
+
+The `git fetch --all` command fetches updates from all configured remote repositories.
+
+### Syntax
+
+`git fetch --all`
+
+### Example
+
+`git fetch --all`
+
+### Important Note
+
+If a repository has only one remote, such as:
+
+`origin`
+
+then `git fetch` and `git fetch --all` may produce similar results.
+
+The `--all` option becomes more useful when a repository has multiple configured remotes.
+
+### Example
+
+A repository may have:
+
+- `origin`
+- `upstream`
+
+Then:
+
+`git fetch --all`
+
+fetches updates from all configured remotes.
+
+### Real-World Use
+
+This command is useful for developers working with multiple remote repositories.
+
+
+## 11. git branch -d
+
+The `git branch -d` command safely deletes a local branch.
+
+### Syntax
+
+`git branch -d <branch-name>`
+
+### Example
+
+`git branch -d test-delete`
+
+### Example Output
+
+```text
+Deleted branch test-delete
+
+
+How It Works:----
+
+Git normally checks whether the branch has been merged before allowing the deletion.
+
+If the branch contains unmerged changes, Git may prevent the deletion.
+
+Real-World Use:
+
+After a feature branch has been successfully merged into main, a developer can safely delete the local feature branch.
+
+Example:
+
+feature-login
+      ↓
+Merged into main
+      ↓
+Delete local feature-login branch
+
+Command:
+
+git branch -d feature-login
+
+Important Point:---
+
+git branch -d deletes the local branch.
+
+It does not automatically delete the corresponding branch from GitHub.
+
+
+
+
+---
+
+# 12. `git branch -D`
+
+The `git branch -D` command forcefully deletes a local branch.
+
+### Syntax
+
+`git branch -D <branch-name>`
+
+### Example
+
+`git branch -D test-force-delete`
+
+### Example Output
+
+```text
+Deleted branch test-force-delete
+
+
+How It Works:---
+
+The -D option is the force-delete version of git branch -d.
+
+It can delete a branch even when Git detects that the branch contains unmerged changes.
+
+Real-World Use:
+
+A developer may use git branch -D when:
+
+A temporary branch is no longer required.
+A feature was abandoned.
+The developer is certain that the unmerged changes are no longer needed.
+
+*Warning*
+
+Use this command carefully.
+
+If the branch contains important unmerged work that is not available elsewhere, forcefully deleting the branch can make that work difficult to recover.
