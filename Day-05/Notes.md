@@ -56,10 +56,10 @@ origin/main
 
 ## Difference
 
-| Local Branch                 | Remote Branch |
-| -----------------------------|---------------|
-| Stored on your computer      | Stored on GitHub |
-| Visible only on your system  | Visible to the team |
+| Local Branch                 | Remote Branch            |
+| -----------------------------|--------------------------|
+| Stored on your computer      | Stored on GitHub         |
+| Visible only on your system  | Visible to the team      |
 | Can work offline             | Requires synchronization |
 
 ---
@@ -93,25 +93,43 @@ Answer:
 A Local Branch exists on the developer's computer, while a Remote Branch exists on GitHub or another remote repository and can be shared with the team.
 
 
-## Local Branch vs Remote-Tracking Branch
+# Day-05 — Git Branch & Remote Management
+
+## 🎯 Day-05 Objective
+
+The main objective of Day-05 was to understand local branches, remote-tracking branches, remote repositories, branch tracking, fetching changes from remote repositories, and safely deleting local branches.
+
+---
+
+## 1. Local Branches vs Remote-Tracking Branches
+
+Git uses different types of branch references to manage local and remote work.
 
 ### Local Branch
 
 A local branch exists in the local Git repository on the developer's computer.
 
-Example:
+Examples:
 
-main
-feature-login
+- main
+- feature-login
+- feature-a
+- feature-b
+
+Command:
+
+git branch
 
 ### Remote-Tracking Branch
 
-A remote-tracking branch is Git's local reference to a branch on the remote repository.
+A remote-tracking branch is a local reference to a branch that exists on a remote repository.
 
-Example:
+Examples:
 
-origin/main
-origin/feature-login
+- origin/main
+- origin/feature-login
+
+Here, `origin` is the name of the remote repository.
 
 ### Important Difference
 
@@ -125,20 +143,17 @@ origin/main
 
 The `origin/` prefix indicates that the branch is associated with the remote named `origin`.
 
-### Useful Commands
+---
 
-git branch
-git branch -r
-git branch -a
+## 2. git branch -a
 
-### Real-World Example
+The `git branch -a` command displays both local branches and remote-tracking branches.
 
-A developer may work on:
+Example:
 
+```text
+main
 feature-login
-
-while Git keeps a reference to the GitHub branch:
-
+feature-a
+origin/main
 origin/feature-login
-
-This helps the developer understand the relationship between local work and the remote repository.
