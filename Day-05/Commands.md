@@ -393,7 +393,7 @@ It can be used when a local branch needs to be forcefully deleted even though Gi
 ---
 PS:
 
-1. If we want to delete the branch from remote repository (Github) then we need to do below task:
+1. If we want to delete the branch from remote (Github) then we need to do below task:
 suppose our created branch is: "feature-login"
-Now to delete the branch we need to run: git push origin --delete feature-login
+Now to delete the branch we need to run: git push origin -D feature-login
          
