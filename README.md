@@ -27,6 +27,9 @@ git-github-learning-journey
 ├── Day-03
 ├── Day-04
 ├── Day-05
+├── Day-06
+├── Day-07
+├── Day-08
 ├── Resources
 └── Screenshots
 ```
@@ -39,7 +42,9 @@ git-github-learning-journey
 - [X] Day 02 - Git Basics
 - [X] Day 03 - Git Branching
 - [X] Day 04 - Git Merge
-- [ ] Day 05 - GitHub Workflow
+- [X] Day 05 - GitHub Workflow
+- [ ] Day 06 - Git Diff & Change Management
+
 
 ---
 
