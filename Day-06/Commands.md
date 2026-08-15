@@ -62,3 +62,43 @@ This command unstages the file but keeps the changes in the working directory.
 
 It moves the file from:
 Staging Area → Working Directory
+
+
+## 4. git show
+
+### Purpose
+
+Displays detailed information about a specific commit, including the commit metadata and the actual changes introduced by that commit.
+
+### Syntax
+
+git show <commit-hash>
+
+### Example
+
+git show 60a30d9
+
+### Example Without Commit Hash
+
+git show
+
+This displays the latest commit referenced by `HEAD`.
+
+### Important Information Displayed
+
+- Commit hash
+- Author
+- Date
+- Commit message
+- Changed files
+- Actual code or documentation changes
+
+### Real-World Use
+
+Useful for reviewing a specific commit, investigating changes, troubleshooting issues, and understanding what was changed by a particular developer.
+
+### Difference from git log
+
+`git log` → Shows commit history.
+
+`git show` → Shows detailed information and actual changes for a specific commit.

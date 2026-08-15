@@ -10,6 +10,7 @@ The commands practiced so far are:
 git diff
 git diff --staged
 git restore --staged
+
 1. Understanding Git Change Areas
 
 Git mainly works with three important areas:
@@ -43,6 +44,7 @@ Working Directory
   git commit
       ↓
   Repository
+
 2. git diff
 
 The git diff command shows the changes in tracked files that have not yet been staged.
@@ -132,6 +134,7 @@ Working Directory
 git diff --staged
       ↓
  Staged Changes
+
 5. git restore --staged
 
 The git restore --staged command removes a file from the staging area without deleting the changes from the working directory.
@@ -169,6 +172,7 @@ It only moves the file:
 Staging Area
       ↓
 Working Directory
+
 6. Practical Learning
 
 During today's practical session:
@@ -195,3 +199,93 @@ Remaining
  git restore
  git rm
  git mv
+
+
+
+ ## 7. git show
+
+The `git show` command displays detailed information about a specific Git commit.
+
+It can show:
+
+- Commit ID
+- Author
+- Date
+- Commit message
+- Files changed
+- Actual changes made in the commit
+
+### Syntax
+
+git show <commit-hash>
+
+### Example
+
+git show 60a30d9
+
+In our practical session, `60a30d9` was the latest commit.
+
+The command displayed:
+
+- The full commit hash
+- Author information
+- Commit date
+- Commit message
+- Files modified by the commit
+- The actual content changes
+
+### Example Output
+
+    commit 60a30d92616b7ae866e4ad18207e5decb44e7404
+    Author: Bhaumik Dhebar
+    Date: Fri Aug 14 22:46:01 2026 +0530
+
+        Document git diff and staging commands
+
+The output then displayed the changes made to `Day-06/Commands.md` and `Day-06/Notes.md`.
+
+### Using git show Without a Commit Hash
+
+The latest commit can also be inspected using:
+
+git show
+
+Git automatically uses `HEAD`, which represents the currently checked-out commit.
+
+### Short Commit Hash
+
+Git allows us to use a shortened commit hash when it uniquely identifies a commit.
+
+Example:
+
+git show 60a30d9
+
+instead of using the complete SHA-1 hash.
+
+### Real-World Use
+
+Developers use `git show` to investigate what exactly changed in a particular commit.
+
+It is useful for:
+
+- Reviewing previous work
+- Investigating bugs
+- Checking configuration changes
+- Understanding who made a change
+- Reviewing changes before troubleshooting
+
+### Important Difference
+
+`git log --oneline` mainly shows commit history.
+
+`git show <commit-hash>` shows detailed information and the actual changes for a specific commit.
+
+### Simple Understanding
+
+    git log --oneline
+            ↓
+    Find a commit
+            ↓
+    git show <commit-hash>
+            ↓
+    Inspect that commit
