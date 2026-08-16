@@ -102,3 +102,39 @@ Useful for reviewing a specific commit, investigating changes, troubleshooting i
 `git log` → Shows commit history.
 
 `git show` → Shows detailed information and actual changes for a specific commit.
+
+
+## 5. git show --stat
+
+### Purpose
+
+Displays a summary of a specific commit, including the changed files and the number of insertions and deletions.
+
+### Syntax
+
+git show --stat <commit-hash>
+
+### Example
+
+git show --stat 629d7ed
+
+### Example Output
+
+    README.md | 7 ++++++-
+    1 file changed, 6 insertions(+), 1 deletion(-)
+
+### Meaning
+
+- `1 file changed` → One file was modified.
+- `6 insertions(+)` → Six lines were added.
+- `1 deletion(-)` → One line was removed.
+
+### Difference from git show
+
+`git show` displays the complete line-by-line changes.
+
+`git show --stat` displays a summary of the changes.
+
+### Real-World Use
+
+Useful when a developer wants a quick overview of the scope of a commit without reviewing the complete diff.

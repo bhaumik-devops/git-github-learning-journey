@@ -289,3 +289,47 @@ It is useful for:
     git show <commit-hash>
             ↓
     Inspect that commit
+
+
+
+    ## 8. git show --stat
+
+The `git show --stat` command displays a summary of the changes introduced by a specific commit.
+
+### Syntax
+
+git show --stat <commit-hash>
+
+### Practical Example
+
+git show --stat 629d7ed
+
+The command displayed the summary of commit `629d7ed`.
+
+The output showed:
+
+- `README.md` was changed.
+- 1 file was changed.
+- 6 lines were inserted.
+- 1 line was deleted.
+
+### Understanding the Output
+
+    README.md | 7 ++++++-
+    1 file changed, 6 insertions(+), 1 deletion(-)
+
+This means that one file was modified, six new lines were added, and one line was deleted.
+
+### Difference from git show
+
+`git show` displays detailed line-by-line changes.
+
+`git show --stat` provides a compact summary of the changes.
+
+### Real-World Use
+
+Developers can use `git show --stat` to quickly understand the size and scope of a commit before inspecting its complete changes.
+
+### Practical Learning
+
+I used `git show --stat 629d7ed` to inspect a previous commit and understand the summary of its changes.
