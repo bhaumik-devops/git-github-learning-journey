@@ -8,6 +8,42 @@
 - [x] Day-04
 - [X] Day-05
 - [ ] Day-06
+
+## Day-06 — Git Diff & Change Management
+
+### Completed
+
+- [x] git diff
+- [x] git diff --staged
+- [x] git restore --staged
+- [x] git show
+- [x] git show --stat
+
+### Documentation
+
+- [x] Notes.md updated
+- [x] Commands.md updated
+
+### Practical
+
+- [x] git diff
+- [x] git diff --staged
+- [x] git restore --staged
+- [x] git show
+- [x] git show --stat
+
+### Pending
+
+- [ ] Day-06 screenshots
+- [ ] git restore
+- [ ] git rm
+- [ ] git mv
+
+### Status
+
+🟢 In Progress
+
+
 - [ ] Day-07
 - [ ] Day-08
 - [ ] Day-09
