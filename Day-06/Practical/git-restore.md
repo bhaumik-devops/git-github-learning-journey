@@ -10,17 +10,15 @@ The `git restore` command discards unstaged changes in a tracked file and restor
 
 ## Practical Test
 
-A temporary line was added to:
+A temporary change was added to:
 
 Day-06/Notes.md
 
-The change was verified using:
+The change was checked using:
 
 git diff
 
-The output showed:
-
-+TEMPORARY RESTORE TEST
+The diff showed the temporary change.
 
 The change was then discarded using:
 
@@ -28,20 +26,23 @@ git restore Day-06/Notes.md
 
 ## Verification
 
-After running `git restore`, `git diff` produced no output.
+After running `git restore`:
 
-`git status` also showed that `Day-06/Notes.md` was no longer modified.
+- `git diff` produced no output.
+- `Day-06/Notes.md` was no longer modified.
+- The temporary test file was deleted.
+- `git status` showed a clean working tree.
 
-The temporary test file was then deleted.
-
-Final result:
+Final status:
 
 nothing to commit, working tree clean
 
+## Important Difference
+
+`git restore <file>` discards unstaged changes in the working directory.
+
+`git restore --staged <file>` removes a file from the staging area while keeping its working-directory changes.
+
 ## Learning
 
-`git restore <file>` discards unstaged changes from the working directory and restores the file to its last committed version.
-
-Important:
-
-`git restore --staged <file>` is different. It removes a file from the staging area while keeping its working-directory changes.
+I learned how to safely identify and discard an unwanted unstaged change using `git restore`.
