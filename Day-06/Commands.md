@@ -138,3 +138,42 @@ git show --stat 629d7ed
 ### Real-World Use
 
 Useful when a developer wants a quick overview of the scope of a commit without reviewing the complete diff.
+
+
+## 6. git restore
+
+### Purpose
+
+Discards unstaged changes in a tracked file and restores the file to its last committed state.
+
+### Syntax
+
+git restore <file-name>
+
+### Example
+
+git restore Day-06/Notes.md
+
+### Important Point
+
+`git restore` discards unstaged changes.
+
+It does not remove a file from the staging area.
+
+For unstaging a file while keeping its changes, use:
+
+git restore --staged <file-name>
+
+### Practical Result
+
+During the practical exercise, a temporary change was added to `Day-06/Notes.md`.
+
+The change was verified using:
+
+git diff
+
+Then the change was discarded using:
+
+git restore Day-06/Notes.md
+
+After the command, `git diff` produced no output and the working tree became clean.

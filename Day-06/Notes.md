@@ -333,3 +333,42 @@ Developers can use `git show --stat` to quickly understand the size and scope of
 ### Practical Learning
 
 I used `git show --stat 629d7ed` to inspect a previous commit and understand the summary of its changes.
+
+
+## 9. git restore
+
+The `git restore` command is used to discard unstaged changes in a tracked file and restore the file to its last committed state.
+
+### Syntax
+
+git restore <file-name>
+
+### Practical Example
+
+git restore Day-06/Notes.md
+
+A temporary change was added to `Day-06/Notes.md` and verified using `git diff`.
+
+The temporary change was then removed using:
+
+git restore Day-06/Notes.md
+
+After running the command, `git diff` produced no output and the file returned to its last committed state.
+
+### Difference Between git restore and git restore --staged
+
+`git restore <file-name>`
+
+→ Discards unstaged working-directory changes.
+
+`git restore --staged <file-name>`
+
+→ Removes the file from the staging area but keeps the working-directory changes.
+
+### Real-World Use
+
+`git restore` is useful when a developer makes an unwanted modification and wants to return a tracked file to its last committed state.
+
+### Important Warning
+
+`git restore` can permanently discard uncommitted changes. Always review the changes with `git diff` before using it when the changes may be important.
